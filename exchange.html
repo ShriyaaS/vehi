@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show Room: Vehicles</title>
+    <link rel="stylesheet" href="exchange.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <img style="width:90px; height:50px; margin-right: 35px;" src="Vehicle_image.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="billings.html">Billings</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </div>
+    <div class="main-contents">
+        <div class="sidebar_tw">
+            <h3 id="sidebar-title-vehicles-filter">For Add Options</h3>
+            <form><div>
+                <p><b>Ex_Vehicle ID : </b></p>
+                <input type="number" id="Ex_vehicleid" name="Ex_vehicleid" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            </div>
+            <div><p ><b>Types</b></p>
+                <input type="checkbox" id="Ex_scooty" name="Ex_vehicle_type[]" value="scooty"/>
+                <label for="scooty">Scooty</label><br>
+
+                <input type="checkbox" id="Ex_motorcycle" name="Ex_vehicle_type[]" value="motorcycle">
+                <label for="motorcycle">Motor Cycle</label><br>
+
+                <input type="checkbox" id="Ex_sportsbike" name="Ex_vehicle_type[]" value="sportsbike">
+                <label for="sportsbike">Sports Bike</label><br>
+
+                <input type="checkbox" id="Ex_electricbike" name="Ex_vehicle_type[]" value="electricbike">
+                <label for="electricbike">Electric Bike</label><br>
+
+                <input type="checkbox" id="Ex_nongearbike" name="Ex_vehicle_type[]" value="nongearbike">
+                <label for="nongearbike">Non-gear Bike</label><br><hr>
+            </div>
+            <div>
+                <p><b>Purchase Date</b></p>
+                <input type="date" id="purchaseDate" name="purchaseDate">
+                <hr>
+            </div>
+            <p><b>Ex_Vehicle Cost_prize : </b></p>
+                    <input type="number" id="Ex_rate" name="Ex_rate" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            <p><b>Ex_Vehicle Sell_prize : </b></p>
+                    <input type="number" id="Ex_rate" name="Ex_rate" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            <p><b>KMs Driven : </b></p>
+                    <input type="number" id="Ex_rate" name="Ex_rate" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            <br>  <br><label for="fuel"><b>Choose a Fuel Type:</b></label>
+                <br><br>  <select name="fuel" id="fuel">
+                    <option value="Gasoline (Petrol)">Gasoline (Petrol)</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electricity">Electricity</option>
+               </select><hr>
+            <div><p ><b>Color</b></p>
+                <select id="color" name="color" multiple size=5>
+                    <option value="MetallicBlack">Metallic Black</option>
+                    <option value="MetallicBlackSteal">Metallic Black Steal</option>
+                    <option value="MetallicSteelGray">Metallic Steel Gray</option>
+                    <option value="MetallicStoneSilver">Metallic Stone Silver</option>
+                    <option value="UtilShadowSilver">Util Shadow Silver</option>
+                    <option value="MetallicRed">Metallic Red</option>
+                    <option value="MetallicCabernetRed">Metallic Cabernet Red</option>
+                    <option value="MetallicSeaGreen">Metallic Sea Green</option>
+                    <option value="MetallicMarinerBlue">MetallicMarinerBlue</option>
+                    <option value="UtilMediumBrown">Util Medium Brown</option>
+                </select><br><br>
+            </div>
+            <div>
+                <input type="submit" value="Add">
+            </div><hr>
+            <h3 id="sidebar-title-vehicles-filter">For Remove - Options</h3>
+                <div>
+                    <p><b>Ex_Vehicle ID : </b></p>
+                    <input type="number" id="R_vehicleid" name="R_vehicleid" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+                </div><br><br>
+                <div>
+                    <input type="submit" value="Remove">
+                </div><hr>
+            </form>
+            </div>
+        <div class="content">
+            
+        </div>
+        <div class="sidebar_tw2">
+            <div style="width: 300px;">
+                
+                <h3 id="sidebar-title-vehicles-filter">For Search Options</h3>
+            <form>
+                <div><p ><b>Types</b></p>
+                    <input type="checkbox" id="scooty" name="vehicle_type[]" value="scooty"/>
+                    <label for="scooty">Scooty</label><br>
+
+                    <input type="checkbox" id="motorcycle" name="vehicle_type[]" value="motorcycle">
+                    <label for="motorcycle">Motor Cycle</label><br>
+
+                    <input type="checkbox" id="sportsbike" name="vehicle_type[]" value="sportsbike">
+                    <label for="sportsbike">Sports Bike</label><br>
+
+                    <input type="checkbox" id="electricbike" name="vehicle_type[]" value="electricbike">
+                    <label for="electricbike">Electric Bike</label><br>
+
+                    <input type="checkbox" id="nongearbike" name="vehicle_type[]" value="nongearbike">
+                    <label for="nongearbike">Non-gear Bike</label><br><hr>
+                </div>
+                <div><p><b>Cost Prize</b></p>
+                    <input type="radio" id="Cprizerange" name="Cprizerange" value="35000_to_50000"/>
+                    <label for="35000_to_50000">35000 - 50000</label><br>
+
+                    <input type="radio" id="Cprizerange" name="Cprizerange" value="50000_to_65000">
+                    <label for="50000_to_65000">50000 - 65000</label><br>
+
+                    <input type="radio" id="Cprizerange" name="Cprizerange" value="65000_to_95000">
+                    <label for="65000_to_95000">65000 - 95000</label><br>
+
+                    <input type="radio" id="Cprizerange" name="Cprizerange" value="95000_to_120000">
+                    <label for="95000_to_120000">95000 - 120000</label><br>
+
+                    <input type="radio" id="Cprizerange" name="Cprizerange" value="more_than_120000">
+                    <label for="more_than_120000">More than 120000 </label><br>
+                    
+                    <p><b>For a Specific Range of Prize :</b></p>
+                    <input type="number" id="lowlimit" name="lowlimit" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Lower"><span> - </span>
+                    <input type="number" id="highlimit" name="highlimit" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Higher"></p><hr>
+
+                
+                    <div><p ><b>Sell Prize</b></p>
+                    <input type="radio" id="Sprizerange" name="Sprizerange" value="35000_to_50000"/>
+                    <label for="35000_to_50000">35000 - 50000</label><br>
+
+                    <input type="radio" id="Sprizerange" name="Sprizerange" value="50000_to_65000">
+                    <label for="50000_to_65000">50000 - 65000</label><br>
+
+                    <input type="radio" id="Sprizerange" name="Sprizerange" value="65000_to_95000">
+                    <label for="65000_to_95000">65000 - 95000</label><br>
+
+                    <input type="radio" id="Sprizerange" name="Sprizerange" value="95000_to_120000">
+                    <label for="95000_to_120000">95000 - 120000</label><br>
+
+                    <input type="radio" id="Sprizerange" name="Sprizerange" value="more_than_120000">
+                    <label for="more_than_120000">More than 120000 </label><br>
+
+                    <p><b>For a Specific Range of Prize :</b></p>
+                    <input type="number" id="lowlimit" name="lowlimit" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Lower"><span> - </span>
+                    <input type="number" id="highlimit" name="highlimit" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Higher"></p><hr>
+
+                </div>
+                <div><p ><b>Registration Year </b></p>
+                    <input type="checkbox" id="2023" name="2023" value="2023"/>
+                    <label for="2023">2023</label><br>
+
+                    <input type="checkbox" id="2022" name="2022" value="2022">
+                    <label for="2022">2022</label><br>
+
+                    <input type="checkbox" id="2021" name="2021" value="2021">
+                    <label for="2021">2021</label><br>
+
+                    <input type="checkbox" id="2020" name="2020" value="2020">
+                    <label for="2020">2020</label><br>
+                    <input type="checkbox" id="Less then 2020" name="less then 2020" value="less then 2020">
+                    <label for="2020">Less then 2020</label><br>
+                    <p><b>For Older and Specific Models :</b></p>
+                    <input type="number" id="lowlimitmodel" name="lowlimitmodel" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Lower"><span> - </span>
+                    <input type="number" id="highlimitmodel" name="highlimitmodel" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Higher"></p><hr>
+                </div>
+
+                <div><p ><b>Color</b></p>
+                    <select id="color" name="color" multiple size=5>
+                        <option value="MetallicBlack">Metallic Black</option>
+                        <option value="MetallicBlackSteal">Metallic Black Steal</option>
+                        <option value="MetallicSteelGray">Metallic Steel Gray</option>
+                        <option value="MetallicStoneSilver">Metallic Stone Silver</option>
+                        <option value="UtilShadowSilver">Util Shadow Silver</option>
+                        <option value="MetallicRed">Metallic Red</option>
+                        <option value="MetallicCabernetRed">Metallic Cabernet Red</option>
+                        <option value="MetallicSeaGreen">Metallic Sea Green</option>
+                        <option value="MetallicMarinerBlue">MetallicMarinerBlue</option>
+                        <option value="UtilMediumBrown">Util Medium Brown</option>
+                    </select><hr>
+                </div>
+                <label for="fuel"><b>Choose a Fuel Type:</b></label>
+                <select name="fuel" id="fuel">
+                    <option value="Gasoline (Petrol)">Gasoline (Petrol)</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electricity">Electricity</option>
+                </select><hr>
+                <div><p ><b>KMs Driven</b></p>
+                        <input type="radio" id="ccrange" name="ccrange" value="60_to_100"/>
+                        <label for="60_to_100">10000- 25000</label><br>
+
+                        <input type="radio" id="ccrange" name="ccrange" value="100_to_150">
+                        <label for="100_to_150">25001 - 50000</label><br>
+
+                        <input type="radio" id="ccrange" name="ccrange" value="150_to_200">
+                        <label for="150_to_200">50001 - 75000</label><br>
+
+                        <input type="radio" id="ccrange" name="ccrange" value="200_to_250">
+                        <label for="200_to_250">75001 - 100000</label><br>
+
+                        <input type="radio" id="ccrange" name="ccrange" value="more_than_250">
+                        <label for="more_than_250">More than 100000</label><br>
+
+                </div><br>
+                <div>
+                    <input type="submit" value="Go"><br><br>
+                </div>
+                <hr>
+            </form>
+        </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <center>   Copyright 1999-2023 by SAVAAK Data. All Rights Reserved.<br>SAVAAK is Powered by Honda</center>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+MYBRANCHES
+
+MYEMPLOYEES
+
+//Predifined tables with default values
+MYINSURANCE
+MYPRODUCTS
+MYREPAIREDPART
+MYSERVICENAMES
+
+//Tables of sections
+MYVEHICLES
+
+MYSERVICE
+MYSERVICEREPAIREDPART
+MYSERVICETYPE
+
+MYEXCHANGE
+
+//Tables for customers
+MYCUSTOMERS
+MYCUSTOMERVEHICLE
+MYCUSTOMERINSURANCE
+
+
+
+
+DESC MYBRANCHES;
+
+DESC MYEMPLOYEES;
+
+DESC MYINSURANCE;
+DESC MYPRODUCTS;
+DESC MYREPAIREDPART;
+DESC MYSERVICENAMES;
+
+DESC MYVEHICLES;
+
+DESC MYSERVICE;
+DESC MYSERVICEREPAIREDPART;
+DESC MYSERVICETYPE;
+
+DESC MYEXCHANGE;
+
+DESC MYCUSTOMERS;
+DESC MYCUSTOMERVEHICLE;
+DESC MYCUSTOMERINSURANCE;
+
+
+
+
+
+

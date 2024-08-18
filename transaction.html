@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show Room: Vehicles</title>
+    <link rel="stylesheet" href="transactions.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <img style="width:90px; height:50px; margin-right: 35px;" src="Vehicle_image.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="billings.html">Billings</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </div>
+    <div class="main-contents">
+        <div class="sidebar_tw">
+            <h3 id="sidebar-title-vehicles-filter">For Add Options</h3>
+            <form><div>
+                <p><b>Transaction ID : </b></p>
+                <input type="number" id="Transaction_id" name="Transaction_id" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            </div>
+            <div><p ><b>Types</b></p>
+                <input type="checkbox" id="Cash" name="Transaction[]" value="Cash"/>
+                <label for="scooty">Cash</label><br>
+
+                <input type="checkbox" id="Card" name="Transaction[]" value="Credit/depit card">
+                <label for="motorcycle">Motor Cycle</label><br>
+
+                <input type="checkbox" id="Checks" name="Transaction[]" value="Checks">
+                <label for="sportsbike">Sports Bike</label><br>
+
+                <input type="checkbox" id="Digital" name="Transaction[]" value="Digital payment">
+                <label for="electricbike">Electric Bike</label><br>
+
+             <hr>
+            </div>
+            <div>
+                <p><b>Transaction Date</b></p>
+                <input type="date" id="purchaseDate" name="purchaseDate">
+                <hr>
+            </div>
+            <p><b>Ex_Vehicle Amount : </b></p>
+                    <input type="number" id="Amount" name="Amount" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            
+            <p><b>Transaction Status : </b></p>
+            <input type="radio" id="Status" name="Status" value="Paid"/>
+            <label for="Paid">Paid</label><br>
+
+            <input type="radio" id="Status" name="Status" value="Failed">
+            <label for="Failed">Failed</label><br>
+
+            <div>
+                <input type="submit" value="Add">
+            </div><hr>
+            <h3 id="sidebar-title-vehicles-filter">For Remove - Options</h3>
+                <div>
+                    <p><b>Ex_Vehicle ID : </b></p>
+                    <input type="number" id="R_vehicleid" name="R_vehicleid" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+                </div><br><br>
+                <div>
+                    <input type="submit" value="Remove">
+                </div><hr>
+            </form>
+            </div>
+        <div class="content">
+            
+        </div>
+        <div class="sidebar_tw2">
+            <div style="width: 300px;">
+                
+                <h3 id="sidebar-title-vehicles-filter">For Search Options</h3>
+            <form>
+                <p><b>Transaction ID : </b></p>
+                <input type="number" id="Transaction_id" name="Transaction_id" style="height: 15px; width: 125px; border: 2px solid black; border-radius: 5px;" placeholder="Ex . 123456">
+            </div>
+            <div><p ><b>Types</b></p>
+                <input type="checkbox" id="Cash" name="Transaction[]" value="Cash"/>
+                <label for="scooty">Cash</label><br>
+
+                <input type="checkbox" id="Card" name="Transaction[]" value="Credit/depit card">
+                <label for="motorcycle">Credit/depit card</label><br>
+
+                <input type="checkbox" id="Checks" name="Transaction[]" value="Checks">
+                <label for="sportsbike">Checks</label><br>
+
+                <input type="checkbox" id="Digital" name="Transaction[]" value="Digital payment">
+                <label for="electricbike">Digital paymen</label><br>
+
+         <hr>
+        </div>
+        <div><p ><b>Amount </b></p>
+            <input type="radio" id="amountrange" name="amountrange" value="35000_to_50000"/>
+            <label for="35000_to_50000">35000 - 50000</label><br>
+
+            <input type="radio" id="amountrange" name="amountrange" value="50000_to_65000">
+            <label for="50000_to_65000">50000 - 65000</label><br>
+
+            <input type="radio" id="amountrange" name="amountrange" value="65000_to_95000">
+            <label for="65000_to_95000">65000 - 95000</label><br>
+
+            <input type="radio" id="amountrange" name="amountrange" value="95000_to_120000">
+            <label for="95000_to_120000">95000 - 120000</label><br>
+
+            <input type="radio" id="amountrange" name="amountrange"value="more_than_120000">
+            <label for="more_than_120000">More than 120000 </label><br>
+
+            <p><b>For a Specific Range of Prize :</b></p>
+            <input type="number" id="lowlimit" name="lowlimit" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Lower"><span> - </span>
+            <input type="number" id="highlimit" name="highlimit" style="height: 15px; width: 75px; border: 2px solid black; border-radius: 5px;" placeholder="Higher"></p><hr>
+
+        </div>
+                
+
+                <div>
+                    <p><b>Transaction Date</b></p>
+                    <input type="date" id="purchaseDate" name="purchaseDate">
+                    <hr>
+                </div>
+                <div>
+                    <p><b>Transaction Status : </b></p>
+                    <input type="radio" id="Status" name="Status" value="Paid"/>
+                    <label for="Paid">Paid</label><br>
+        
+                    <input type="radio" id="Status" name="Status" value="Failed">
+                    <label for="Failed">Failed</label><br>
+        
+                        </div><br>
+                
+                
+                
+                <br>
+                <div>
+                    <input type="submit" value="Go"><br><br>
+                </div>
+                <hr>
+            </form>
+        </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <center>   Copyright 1999-2023 by SAVAAK Data. All Rights Reserved.<br>SAVAAK is Powered by Honda</center>
+    </div>
+</body>
+
+</html>
+
+
+
+
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3450, 'engine', 5000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3451, 'piston', 200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3452, 'crankshaft', 1500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3453, 'cylinderHead', 3000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3454, 'timingBelt', 500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3455, 'fuelInjector', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3456, 'waterPump', 1200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3457, 'alternator', 2500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3458, 'brakePads', 600);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3459, 'brakeRotors', 1000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3460, 'calipers', 1200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3461, 'brakeMasterCylinder', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3462, 'brakeLines', 300);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3463, 'ABSModule', 1500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3464, 'tires', 2000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3465, 'rims', 1000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3466, 'tirePressureSensor', 150);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3467, 'wheelBearings', 500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3468, 'hubAssembly', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3469, 'alignmentKit', 300);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3470, 'battery', 1000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3471, 'starter', 600);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3472, 'ignitionCoil', 400);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3473, 'sparkPlugs', 100);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3474, 'wiringHarness', 200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3475, 'shockAbsorbers', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3476, 'struts', 1000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3477, 'controlArms', 600);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3478, 'ballJoints', 300);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3479, 'suspensionBushings', 200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3480, 'swayBarLinks', 150);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3481, 'transmission', 3000);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3482, 'clutchKit', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3483, 'transmissionFluid', 200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3484, 'torqueConverter', 1200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3485, 'transmissionMount', 300);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3486, 'exhaustPipe', 500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3487, 'muffler', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3488, 'catalyticConverter', 1500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3489, 'exhaustManifold', 600);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3490, 'oxygenSensor', 200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3491, 'fuelPump', 400);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3492, 'fuelFilter', 100);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3493, 'fuelInjector', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3494, 'fuelTank', 700);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3495, 'fuelPressureRegulator', 150);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3496, 'radiator', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3497, 'waterPumpCoolingSystem', 1200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3498, 'thermostat', 200);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3499, 'coolantReservoir', 100);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3500, 'coolingFan', 300);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3501, 'compressor', 1500);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3502, 'condenser', 800);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3503, 'evaporator', 600);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3504, 'ACBlowerMotor', 400);
+INSERT INTO MYREPAIREDPART(rep_part_id, name, price) VALUES (3505, 'ACRechargeKit', 200);
